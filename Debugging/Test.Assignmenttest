@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soSA xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="3d050d08-9f7b-4ba6-ace9-dec7d8a3060e" xmlns="http://schemas.microsoft.com/dsltools/Assignment_test">
+  <elements>
+    <systematic_impact_level Id="99a9f110-fdbe-4e8a-a282-6b029fe710ea" name="Systematic_impact_level1">
+      <enabling_impact_level>
+        <systematic_impact_levelHasEnabling_impact_level Id="8fe83a0b-8173-4e1b-93a0-a775f51c5761">
+          <enabling_impact_level Id="e57df628-7502-4e67-b86c-0d27a21b2bc7">
+            <immediate_impact_level>
+              <enabling_impact_levelHasImmediate_impact_level Id="02564d7d-d7d9-4a14-aba5-65099b3e525f">
+                <immediate_impact_level Id="196c1feb-af08-4343-9227-935eb8d9bea2">
+                  <layerNext>
+                    <immediate_impact_levelHasLayerNext Id="d18553d1-b824-4e1e-ad72-62ae1cc07fe8">
+                      <layerNext Id="de37dd69-a20b-4a58-bc72-377b59304f70" />
+                    </immediate_impact_levelHasLayerNext>
+                  </layerNext>
+                </immediate_impact_level>
+              </enabling_impact_levelHasImmediate_impact_level>
+            </immediate_impact_level>
+          </enabling_impact_level>
+        </systematic_impact_levelHasEnabling_impact_level>
+      </enabling_impact_level>
+    </systematic_impact_level>
+  </elements>
+</soSA>

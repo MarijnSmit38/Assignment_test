@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assignment_testDiagram dslVersion="1.0.0.0" Id="9b1e6a58-a7b9-4120-a79d-b3dd5b099bc2" absoluteBounds="0, 0, 11, 8.5" name="Test">
+  <soSAMoniker Id="3d050d08-9f7b-4ba6-ace9-dec7d8a3060e" />
+  <nestedChildShapes>
+    <systematic_shape Id="4a6d7315-75cc-4f70-94e5-693d257dc55a" absoluteBounds="1.5, 0.625, 5.625, 3.875">
+      <systematic_impact_levelMoniker name="/3d050d08-9f7b-4ba6-ace9-dec7d8a3060e/Systematic_impact_level1" />
+    </systematic_shape>
+    <enabling_shape Id="a8a10970-b055-423b-b17f-2e3d814e47c1" absoluteBounds="2.625, 1.5, 3.125, 2.25">
+      <enabling_impact_levelMoniker Id="e57df628-7502-4e67-b86c-0d27a21b2bc7" />
+    </enabling_shape>
+    <immediate_shape Id="c2f1d8eb-1912-4db2-b5f3-dc6f981b7939" absoluteBounds="3.375, 2.125, 1.875, 1.375">
+      <immediate_impact_levelMoniker Id="196c1feb-af08-4343-9227-935eb8d9bea2" />
+    </immediate_shape>
+    <layerNext_shape Id="66598ff6-7eee-4355-adce-3c52e27b8134" absoluteBounds="3.5, 2.375, 1.5, 1">
+      <layerNextMoniker Id="de37dd69-a20b-4a58-bc72-377b59304f70" />
+    </layerNext_shape>
+  </nestedChildShapes>
+</assignment_testDiagram>
