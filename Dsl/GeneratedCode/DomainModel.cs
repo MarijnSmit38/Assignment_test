@@ -72,17 +72,20 @@ namespace Company.Assignment_test
 				typeof(Enabling_impact_level),
 				typeof(Immediate_impact_level),
 				typeof(Solution_name),
+				typeof(Concern),
 				typeof(SoSAHasElements),
 				typeof(Systematic_impact_levelReferencesTargets),
 				typeof(Systematic_impact_levelHasEnabling_impact_level),
 				typeof(Enabling_impact_levelHasImmediate_impact_level),
 				typeof(Immediate_impact_levelHasSolution_name),
+				typeof(SoSAHasConcern),
 				typeof(Assignment_testDiagram),
 				typeof(ExampleConnector),
 				typeof(Systematic_shape),
 				typeof(Enabling_shape),
 				typeof(Immediate_shape),
 				typeof(Solution_name_shape),
+				typeof(Concern_shape),
 				typeof(global::Company.Assignment_test.FixUpDiagram),
 			};
 		}
@@ -116,6 +119,8 @@ namespace Company.Assignment_test
 				new DomainRolePlayerInfo(typeof(Enabling_impact_levelHasImmediate_impact_level), "Immediate_impact_level", Enabling_impact_levelHasImmediate_impact_level.Immediate_impact_levelDomainRoleId),
 				new DomainRolePlayerInfo(typeof(Immediate_impact_levelHasSolution_name), "Immediate_impact_level", Immediate_impact_levelHasSolution_name.Immediate_impact_levelDomainRoleId),
 				new DomainRolePlayerInfo(typeof(Immediate_impact_levelHasSolution_name), "Solution_name", Immediate_impact_levelHasSolution_name.Solution_nameDomainRoleId),
+				new DomainRolePlayerInfo(typeof(SoSAHasConcern), "SoSA", SoSAHasConcern.SoSADomainRoleId),
+				new DomainRolePlayerInfo(typeof(SoSAHasConcern), "Concern", SoSAHasConcern.ConcernDomainRoleId),
 			};
 		}
 		#endregion
@@ -137,18 +142,20 @@ namespace Company.Assignment_test
 	
 			if (createElementMap == null)
 			{
-				createElementMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(11);
+				createElementMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(13);
 				createElementMap.Add(typeof(SoSA), 0);
 				createElementMap.Add(typeof(Systematic_impact_level), 1);
 				createElementMap.Add(typeof(Enabling_impact_level), 2);
 				createElementMap.Add(typeof(Immediate_impact_level), 3);
 				createElementMap.Add(typeof(Solution_name), 4);
-				createElementMap.Add(typeof(Assignment_testDiagram), 5);
-				createElementMap.Add(typeof(ExampleConnector), 6);
-				createElementMap.Add(typeof(Systematic_shape), 7);
-				createElementMap.Add(typeof(Enabling_shape), 8);
-				createElementMap.Add(typeof(Immediate_shape), 9);
-				createElementMap.Add(typeof(Solution_name_shape), 10);
+				createElementMap.Add(typeof(Concern), 5);
+				createElementMap.Add(typeof(Assignment_testDiagram), 6);
+				createElementMap.Add(typeof(ExampleConnector), 7);
+				createElementMap.Add(typeof(Systematic_shape), 8);
+				createElementMap.Add(typeof(Enabling_shape), 9);
+				createElementMap.Add(typeof(Immediate_shape), 10);
+				createElementMap.Add(typeof(Solution_name_shape), 11);
+				createElementMap.Add(typeof(Concern_shape), 12);
 			}
 			int index;
 			if (!createElementMap.TryGetValue(elementType, out index))
@@ -167,12 +174,14 @@ namespace Company.Assignment_test
 				case 2: return new Enabling_impact_level(partition, propertyAssignments);
 				case 3: return new Immediate_impact_level(partition, propertyAssignments);
 				case 4: return new Solution_name(partition, propertyAssignments);
-				case 5: return new Assignment_testDiagram(partition, propertyAssignments);
-				case 6: return new ExampleConnector(partition, propertyAssignments);
-				case 7: return new Systematic_shape(partition, propertyAssignments);
-				case 8: return new Enabling_shape(partition, propertyAssignments);
-				case 9: return new Immediate_shape(partition, propertyAssignments);
-				case 10: return new Solution_name_shape(partition, propertyAssignments);
+				case 5: return new Concern(partition, propertyAssignments);
+				case 6: return new Assignment_testDiagram(partition, propertyAssignments);
+				case 7: return new ExampleConnector(partition, propertyAssignments);
+				case 8: return new Systematic_shape(partition, propertyAssignments);
+				case 9: return new Enabling_shape(partition, propertyAssignments);
+				case 10: return new Immediate_shape(partition, propertyAssignments);
+				case 11: return new Solution_name_shape(partition, propertyAssignments);
+				case 12: return new Concern_shape(partition, propertyAssignments);
 				default: return null;
 			}
 		}
@@ -195,12 +204,13 @@ namespace Company.Assignment_test
 	
 			if (createElementLinkMap == null)
 			{
-				createElementLinkMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(5);
+				createElementLinkMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(6);
 				createElementLinkMap.Add(typeof(SoSAHasElements), 0);
 				createElementLinkMap.Add(typeof(Systematic_impact_levelReferencesTargets), 1);
 				createElementLinkMap.Add(typeof(Systematic_impact_levelHasEnabling_impact_level), 2);
 				createElementLinkMap.Add(typeof(Enabling_impact_levelHasImmediate_impact_level), 3);
 				createElementLinkMap.Add(typeof(Immediate_impact_levelHasSolution_name), 4);
+				createElementLinkMap.Add(typeof(SoSAHasConcern), 5);
 			}
 			int index;
 			if (!createElementLinkMap.TryGetValue(elementLinkType, out index))
@@ -220,6 +230,7 @@ namespace Company.Assignment_test
 				case 2: return new Systematic_impact_levelHasEnabling_impact_level(partition, roleAssignments, propertyAssignments);
 				case 3: return new Enabling_impact_levelHasImmediate_impact_level(partition, roleAssignments, propertyAssignments);
 				case 4: return new Immediate_impact_levelHasSolution_name(partition, roleAssignments, propertyAssignments);
+				case 5: return new SoSAHasConcern(partition, roleAssignments, propertyAssignments);
 				default: return null;
 			}
 		}
@@ -390,6 +401,7 @@ namespace Company.Assignment_test
 			DomainRoles.Add(global::Company.Assignment_test.Systematic_impact_levelHasEnabling_impact_level.Enabling_impact_levelDomainRoleId, true);
 			DomainRoles.Add(global::Company.Assignment_test.Enabling_impact_levelHasImmediate_impact_level.Immediate_impact_levelDomainRoleId, true);
 			DomainRoles.Add(global::Company.Assignment_test.Immediate_impact_levelHasSolution_name.Solution_nameDomainRoleId, true);
+			DomainRoles.Add(global::Company.Assignment_test.SoSAHasConcern.ConcernDomainRoleId, true);
 			#endregion
 		}
 		/// <summary>

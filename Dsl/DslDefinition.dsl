@@ -12,6 +12,14 @@
             <DomainPath>SoSAHasElements.Elements</DomainPath>
           </LinkCreationPaths>
         </ElementMergeDirective>
+        <ElementMergeDirective>
+          <Index>
+            <DomainClassMoniker Name="Concern" />
+          </Index>
+          <LinkCreationPaths>
+            <DomainPath>SoSAHasConcern.Concern</DomainPath>
+          </LinkCreationPaths>
+        </ElementMergeDirective>
       </ElementMergeDirectives>
     </DomainClass>
     <DomainClass Id="61b26034-8d38-46f3-a11c-f09b4766c397" Description="Elements embedded in the model. Appear as boxes on the diagram." Name="Systematic_impact_level" DisplayName="Systematic_impact_level" Namespace="Company.Assignment_test">
@@ -58,6 +66,7 @@
       </ElementMergeDirectives>
     </DomainClass>
     <DomainClass Id="306c5a82-50ac-482a-9694-91d35880fad0" Description="Description for Company.Assignment_test.Solution_name" Name="Solution_name" DisplayName="Solution_name" Namespace="Company.Assignment_test" />
+    <DomainClass Id="6c4e0be1-8f18-4af1-a492-7e6a2de1344f" Description="Description for Company.Assignment_test.Concern" Name="Concern" DisplayName="Concern" Namespace="Company.Assignment_test" />
   </Classes>
   <Relationships>
     <DomainRelationship Id="afc52239-08c1-498a-aa76-88ee5af9f1f5" Description="Embedding relationship between the Model and Elements" Name="SoSAHasElements" DisplayName="So SAHas Elements" Namespace="Company.Assignment_test" IsEmbedding="true">
@@ -140,6 +149,22 @@
         </DomainRole>
       </Target>
     </DomainRelationship>
+    <DomainRelationship Id="65eca63f-a1d2-4c0d-9b2d-00a847a6d63a" Description="Description for Company.Assignment_test.SoSAHasConcern" Name="SoSAHasConcern" DisplayName="So SAHas Concern" Namespace="Company.Assignment_test" IsEmbedding="true">
+      <Source>
+        <DomainRole Id="a42cea06-e333-4404-a9b4-9dae34af7b96" Description="Description for Company.Assignment_test.SoSAHasConcern.SoSA" Name="SoSA" DisplayName="So SA" PropertyName="Concern" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Concern">
+          <RolePlayer>
+            <DomainClassMoniker Name="SoSA" />
+          </RolePlayer>
+        </DomainRole>
+      </Source>
+      <Target>
+        <DomainRole Id="ddd662c0-28a3-4056-ba5e-6a9b29e0b911" Description="Description for Company.Assignment_test.SoSAHasConcern.Concern" Name="Concern" DisplayName="Concern" PropertyName="SoSA" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="So SA">
+          <RolePlayer>
+            <DomainClassMoniker Name="Concern" />
+          </RolePlayer>
+        </DomainRole>
+      </Target>
+    </DomainRelationship>
   </Relationships>
   <Types>
     <ExternalType Name="DateTime" Namespace="System" />
@@ -168,6 +193,7 @@
     <GeometryShape Id="27fe486e-974b-42ea-b9c5-05f00610d856" Description="Description for Company.Assignment_test.Enabling_shape" Name="Enabling_shape" DisplayName="Enabling_shape" Namespace="Company.Assignment_test" FixedTooltipText="Enabling_shape" FillColor="DarkGray" OutlineColor="Transparent" InitialHeight="1" Geometry="Ellipse" />
     <GeometryShape Id="2e60d001-6010-4d8b-ae63-c1791152b709" Description="Description for Company.Assignment_test.Immediate_shape" Name="Immediate_shape" DisplayName="Immediate_shape" Namespace="Company.Assignment_test" FixedTooltipText="Immediate_shape" FillColor="Gainsboro" InitialHeight="1" Geometry="Ellipse" />
     <GeometryShape Id="5e524231-7a91-4845-ad66-8615a6506ea8" Description="Description for Company.Assignment_test.Solution_name_shape" Name="Solution_name_shape" DisplayName="Solution_name_shape" Namespace="Company.Assignment_test" FixedTooltipText="Solution_name_shape" InitialHeight="1" Geometry="Rectangle" />
+    <GeometryShape Id="dce7cefd-2f96-47ae-864a-4ed4db78d7bc" Description="Description for Company.Assignment_test.Concern_shape" Name="Concern_shape" DisplayName="Concern_shape" Namespace="Company.Assignment_test" FixedTooltipText="Concern_shape" InitialHeight="1" Geometry="Rectangle" />
   </Shapes>
   <Connectors>
     <Connector Id="ce18bfc8-3edc-4c18-80cd-a80877729503" Description="Connector between the ExampleShapes. Represents ExampleRelationships on the Diagram." Name="ExampleConnector" DisplayName="Example Connector" Namespace="Company.Assignment_test" FixedTooltipText="Example Connector" Color="113, 111, 110" TargetEndStyle="EmptyArrow" Thickness="0.01" />
@@ -179,6 +205,9 @@
         <ElementData>
           <XmlRelationshipData RoleElementName="elements">
             <DomainRelationshipMoniker Name="SoSAHasElements" />
+          </XmlRelationshipData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="concern">
+            <DomainRelationshipMoniker Name="SoSAHasConcern" />
           </XmlRelationshipData>
         </ElementData>
       </XmlClassData>
@@ -248,6 +277,15 @@
       <XmlClassData TypeName="Solution_name_shape" MonikerAttributeName="" SerializeId="true" MonikerElementName="solution_name_shapeMoniker" ElementName="solution_name_shape" MonikerTypeName="Solution_name_shapeMoniker">
         <GeometryShapeMoniker Name="Solution_name_shape" />
       </XmlClassData>
+      <XmlClassData TypeName="Concern" MonikerAttributeName="" SerializeId="true" MonikerElementName="concernMoniker" ElementName="concern" MonikerTypeName="ConcernMoniker">
+        <DomainClassMoniker Name="Concern" />
+      </XmlClassData>
+      <XmlClassData TypeName="Concern_shape" MonikerAttributeName="" SerializeId="true" MonikerElementName="concern_shapeMoniker" ElementName="concern_shape" MonikerTypeName="Concern_shapeMoniker">
+        <GeometryShapeMoniker Name="Concern_shape" />
+      </XmlClassData>
+      <XmlClassData TypeName="SoSAHasConcern" MonikerAttributeName="" SerializeId="true" MonikerElementName="soSAHasConcernMoniker" ElementName="soSAHasConcern" MonikerTypeName="SoSAHasConcernMoniker">
+        <DomainRelationshipMoniker Name="SoSAHasConcern" />
+      </XmlClassData>
     </ClassData>
   </XmlSerializationBehavior>
   <ExplorerBehavior Name="Assignment_testExplorer" />
@@ -314,6 +352,13 @@
         </ParentElementPath>
         <GeometryShapeMoniker Name="Solution_name_shape" />
       </ShapeMap>
+      <ShapeMap>
+        <DomainClassMoniker Name="Concern" />
+        <ParentElementPath>
+          <DomainPath>SoSAHasConcern.SoSA/!SoSA</DomainPath>
+        </ParentElementPath>
+        <GeometryShapeMoniker Name="Concern_shape" />
+      </ShapeMap>
     </ShapeMaps>
   </Diagram>
   <Designer CopyPasteGeneration="CopyPasteOnly" FileExtension="Assignmenttest" EditorGuid="fd60bbe6-9ddf-4e5d-9cd6-5e97a91c800b">
@@ -338,6 +383,9 @@
       </ElementTool>
       <ElementTool Name="Solution_name" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="Solution_name" Tooltip="Solution_name" HelpKeyword="Solution_name">
         <DomainClassMoniker Name="Solution_name" />
+      </ElementTool>
+      <ElementTool Name="Concern" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="Concern" Tooltip="Concern" HelpKeyword="Concern">
+        <GeometryShapeMoniker Name="Concern_shape" />
       </ElementTool>
     </ToolboxTab>
     <Validation UsesMenu="false" UsesOpen="false" UsesSave="false" UsesLoad="false" />

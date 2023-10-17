@@ -62,6 +62,21 @@ namespace Company.Assignment_test
 			}
 		}
 		#endregion
+		#region Concern opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of Concern.
+		/// Description for Company.Assignment_test.SoSAHasConcern.SoSA
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<Concern> Concern
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<Concern>, Concern>(global::Company.Assignment_test.SoSAHasConcern.SoSADomainRoleId);
+			}
+		}
+		#endregion
 		#region ElementGroupPrototype Merge methods
 		/// <summary>
 		/// Returns a value indicating whether the source element represented by the
@@ -83,6 +98,11 @@ namespace Company.Assignment_test
 				DslModeling::DomainClassInfo rootElementDomainInfo = this.Partition.DomainDataDirectory.GetDomainClass(rootElement.DomainClassId);
 				
 				if (rootElementDomainInfo.IsDerivedFrom(global::Company.Assignment_test.Systematic_impact_level.DomainClassId)) 
+				{
+					return true;
+				}
+				
+				if (rootElementDomainInfo.IsDerivedFrom(global::Company.Assignment_test.Concern.DomainClassId)) 
 				{
 					return true;
 				}
@@ -119,6 +139,15 @@ namespace Company.Assignment_test
 
 				return;
 			}
+				
+			global::Company.Assignment_test.Concern sourceConcern2 = sourceElement as global::Company.Assignment_test.Concern;
+			if (sourceConcern2 != null)
+			{
+				// Create link for path SoSAHasConcern.Concern
+				this.Concern.Add(sourceConcern2);
+
+				return;
+			}
 		
 			// Sdk workaround to runtime bug #879350 (DSL: can't copy and paste a MEL that has a MEX). Avoid MergeRelate on ModelElementExtension
 			// during a "Paste".
@@ -151,6 +180,20 @@ namespace Company.Assignment_test
 				{
 					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
 					link.Delete(global::Company.Assignment_test.SoSAHasElements.SoSADomainRoleId, global::Company.Assignment_test.SoSAHasElements.ElementDomainRoleId);
+				}
+
+				return;
+			}
+				
+			global::Company.Assignment_test.Concern sourceConcern2 = sourceElement as global::Company.Assignment_test.Concern;
+			if (sourceConcern2 != null)
+			{
+				// Delete link for path SoSAHasConcern.Concern
+				
+				foreach (DslModeling::ElementLink link in global::Company.Assignment_test.SoSAHasConcern.GetLinks((global::Company.Assignment_test.SoSA)this, sourceConcern2))
+				{
+					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
+					link.Delete(global::Company.Assignment_test.SoSAHasConcern.SoSADomainRoleId, global::Company.Assignment_test.SoSAHasConcern.ConcernDomainRoleId);
 				}
 
 				return;
@@ -875,6 +918,66 @@ namespace Company.Assignment_test
 			set
 			{
 				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::Company.Assignment_test.Immediate_impact_levelHasSolution_name.Solution_nameDomainRoleId, value);
+			}
+		}
+		#endregion
+	}
+}
+namespace Company.Assignment_test
+{
+	/// <summary>
+	/// DomainClass Concern
+	/// Description for Company.Assignment_test.Concern
+	/// </summary>
+	[DslDesign::DisplayNameResource("Company.Assignment_test.Concern.DisplayName", typeof(global::Company.Assignment_test.Assignment_testDomainModel), "Company.Assignment_test.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("Company.Assignment_test.Concern.Description", typeof(global::Company.Assignment_test.Assignment_testDomainModel), "Company.Assignment_test.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::Company.Assignment_test.Assignment_testDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("6c4e0be1-8f18-4af1-a492-7e6a2de1344f")]
+	public partial class Concern : DslModeling::ModelElement
+	{
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// Concern domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x6c4e0be1, 0x8f18, 0x4af1, 0xa4, 0x92, 0x7e, 0x6a, 0x2d, 0xe1, 0x34, 0x4f);
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public Concern(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public Concern(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
+		}
+		#endregion
+		#region SoSA opposite domain role accessor
+		/// <summary>
+		/// Gets or sets SoSA.
+		/// Description for Company.Assignment_test.SoSAHasConcern.Concern
+		/// </summary>
+		public virtual SoSA SoSA
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::Company.Assignment_test.SoSAHasConcern.ConcernDomainRoleId) as SoSA;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::Company.Assignment_test.SoSAHasConcern.ConcernDomainRoleId, value);
 			}
 		}
 		#endregion

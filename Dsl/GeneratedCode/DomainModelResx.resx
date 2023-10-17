@@ -173,6 +173,14 @@
     <value>Solution_name</value>
     <comment>DisplayName for DomainClass &apos;Solution_name&apos;</comment>
   </data>
+  <data name="Company.Assignment_test.Concern.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.Concern</value>
+    <comment>Description for DomainClass &apos;Concern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Concern.DisplayName" xml:space="preserve">
+    <value>Concern</value>
+    <comment>DisplayName for DomainClass &apos;Concern&apos;</comment>
+  </data>
   <data name="Company.Assignment_test.SoSAHasElements.Description" xml:space="preserve">
     <value>Embedding relationship between the Model and Elements</value>
     <comment>Description for DomainClass &apos;SoSAHasElements&apos;</comment>
@@ -333,6 +341,38 @@
     <value>Immediate_impact_level</value>
     <comment>PropertyDisplayName for DomainRole &apos;Solution_name&apos; on DomainRelationship &apos;Immediate_impact_levelHasSolution_name&apos;</comment>
   </data>
+  <data name="Company.Assignment_test.SoSAHasConcern.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.SoSAHasConcern</value>
+    <comment>Description for DomainClass &apos;SoSAHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.SoSAHasConcern.DisplayName" xml:space="preserve">
+    <value>So SAHas Concern</value>
+    <comment>DisplayName for DomainClass &apos;SoSAHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.SoSAHasConcern/SoSA.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.SoSAHasConcern.SoSA</value>
+    <comment>Description for DomainRole &apos;SoSA&apos; on DomainRelationship &apos;SoSAHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.SoSAHasConcern/SoSA.DisplayName" xml:space="preserve">
+    <value>So SA</value>
+    <comment>DisplayName for DomainRole &apos;SoSA&apos; on DomainRelationship &apos;SoSAHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.SoSAHasConcern/SoSA.PropertyDisplayName" xml:space="preserve">
+    <value>Concern</value>
+    <comment>PropertyDisplayName for DomainRole &apos;SoSA&apos; on DomainRelationship &apos;SoSAHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.SoSAHasConcern/Concern.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.SoSAHasConcern.Concern</value>
+    <comment>Description for DomainRole &apos;Concern&apos; on DomainRelationship &apos;SoSAHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.SoSAHasConcern/Concern.DisplayName" xml:space="preserve">
+    <value>Concern</value>
+    <comment>DisplayName for DomainRole &apos;Concern&apos; on DomainRelationship &apos;SoSAHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.SoSAHasConcern/Concern.PropertyDisplayName" xml:space="preserve">
+    <value>So SA</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Concern&apos; on DomainRelationship &apos;SoSAHasConcern&apos;</comment>
+  </data>
   <data name="Company.Assignment_test.Systematic_shape.Description" xml:space="preserve">
     <value>Shape used to represent ExampleElements on a Diagram.</value>
     <comment>Description for DomainClass &apos;Systematic_shape&apos;</comment>
@@ -368,6 +408,14 @@
   <data name="Company.Assignment_test.Solution_name_shape.DisplayName" xml:space="preserve">
     <value>Solution_name_shape</value>
     <comment>DisplayName for DomainClass &apos;Solution_name_shape&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Concern_shape.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.Concern_shape</value>
+    <comment>Description for DomainClass &apos;Concern_shape&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Concern_shape.DisplayName" xml:space="preserve">
+    <value>Concern_shape</value>
+    <comment>DisplayName for DomainClass &apos;Concern_shape&apos;</comment>
   </data>
   <data name="Company.Assignment_test.ExampleConnector.Description" xml:space="preserve">
     <value>Connector between the ExampleShapes. Represents ExampleRelationships on the Diagram.</value>
@@ -435,6 +483,14 @@
   </data>
   <data name="Solution_nameToolboxTooltip" xml:space="preserve">
     <value>Solution_name</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ConcernToolboxItem" xml:space="preserve">
+    <value>Concern</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ConcernToolboxTooltip" xml:space="preserve">
+    <value>Concern</value>
     <comment>Toolbox tooltip text</comment>
   </data>
   <data name="UnresolvedToolboxItem" xml:space="preserve">
@@ -579,6 +635,10 @@ A DomainClass can be serialized as a moniker only if
     <comment>Toolbox item image</comment>
   </data>
   <data name="Solution_nameToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ConcernToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
     <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
   </data>

@@ -69,6 +69,14 @@ namespace Company.Assignment_test
 					"@Solution_nameToolboxBitmap;Company.Assignment_test.Dsl.dll", 
 					0xff00ff,
 					Index = 4)]
+	[VSShell::ProvideStaticToolboxItem("Company.Assignment_test.Assignment_testToolboxTab",
+					"@ConcernToolboxItem;Company.Assignment_test.Dsl.dll", 
+					"Company.Assignment_test.ConcernToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"Concern", 
+					"@ConcernToolboxBitmap;Company.Assignment_test.Dsl.dll", 
+					0xff00ff,
+					Index = 5)]
 	[VSShell::ProvideEditorFactory(typeof(Assignment_testEditorFactory), 103, TrustLevel = VSShellInterop::__VSEDITORTRUSTLEVEL.ETL_AlwaysTrusted)]
 	[VSShell::ProvideEditorExtension(typeof(Assignment_testEditorFactory), "." + Constants.DesignerFileExtension, 50)]
 	[VSShell::ProvideEditorLogicalView(typeof(Assignment_testEditorFactory), "{7651A702-06E5-11D1-8EBD-00A0C90F26EA}")] // Designer logical view GUID i.e. VSConstants.LOGVIEWID_Designer

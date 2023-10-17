@@ -1229,3 +1229,242 @@ namespace Company.Assignment_test
 		#endregion
 	}
 }
+namespace Company.Assignment_test
+{
+	/// <summary>
+	/// DomainRelationship SoSAHasConcern
+	/// Description for Company.Assignment_test.SoSAHasConcern
+	/// </summary>
+	[DslDesign::DisplayNameResource("Company.Assignment_test.SoSAHasConcern.DisplayName", typeof(global::Company.Assignment_test.Assignment_testDomainModel), "Company.Assignment_test.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("Company.Assignment_test.SoSAHasConcern.Description", typeof(global::Company.Assignment_test.Assignment_testDomainModel), "Company.Assignment_test.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::Company.Assignment_test.Assignment_testDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainRelationship(IsEmbedding=true)]
+	[DslModeling::DomainObjectId("65eca63f-a1d2-4c0d-9b2d-00a847a6d63a")]
+	public partial class SoSAHasConcern : DslModeling::ElementLink
+	{
+		#region Constructors, domain class Id
+		
+		/// <summary>
+		/// SoSAHasConcern domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x65eca63f, 0xa1d2, 0x4c0d, 0x9b, 0x2d, 0x00, 0xa8, 0x47, 0xa6, 0xd6, 0x3a);
+	
+				
+		/// <summary>
+		/// Constructor
+		/// Creates a SoSAHasConcern link in the same Partition as the given SoSA
+		/// </summary>
+		/// <param name="source">SoSA to use as the source of the relationship.</param>
+		/// <param name="target">Concern to use as the target of the relationship.</param>
+		public SoSAHasConcern(SoSA source, Concern target)
+			: base((source != null ? source.Partition : null), new DslModeling::RoleAssignment[]{new DslModeling::RoleAssignment(SoSAHasConcern.SoSADomainRoleId, source), new DslModeling::RoleAssignment(SoSAHasConcern.ConcernDomainRoleId, target)}, null)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new link is to be created.</param>
+		/// <param name="roleAssignments">List of relationship role assignments.</param>
+		public SoSAHasConcern(DslModeling::Store store, params DslModeling::RoleAssignment[] roleAssignments)
+			: base(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, roleAssignments, null)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new link is to be created.</param>
+		/// <param name="roleAssignments">List of relationship role assignments.</param>
+		/// <param name="propertyAssignments">List of properties assignments to set on the new link.</param>
+		public SoSAHasConcern(DslModeling::Store store, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, roleAssignments, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new link is to be created.</param>
+		/// <param name="roleAssignments">List of relationship role assignments.</param>
+		public SoSAHasConcern(DslModeling::Partition partition, params DslModeling::RoleAssignment[] roleAssignments)
+			: base(partition, roleAssignments, null)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new link is to be created.</param>
+		/// <param name="roleAssignments">List of relationship role assignments.</param>
+		/// <param name="propertyAssignments">List of properties assignments to set on the new link.</param>
+		public SoSAHasConcern(DslModeling::Partition partition, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, roleAssignments, propertyAssignments)
+		{
+		}
+		#endregion
+		#region SoSA domain role code
+		
+		/// <summary>
+		/// SoSA domain role Id.
+		/// </summary>
+		public static readonly global::System.Guid SoSADomainRoleId = new global::System.Guid(0xa42cea06, 0xe333, 0x4404, 0xa9, 0xb4, 0x9d, 0xae, 0x34, 0xaf, 0x7b, 0x96);
+		
+		/// <summary>
+		/// DomainRole SoSA
+		/// Description for Company.Assignment_test.SoSAHasConcern.SoSA
+		/// </summary>
+		[DslDesign::DisplayNameResource("Company.Assignment_test.SoSAHasConcern/SoSA.DisplayName", typeof(global::Company.Assignment_test.Assignment_testDomainModel), "Company.Assignment_test.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("Company.Assignment_test.SoSAHasConcern/SoSA.Description", typeof(global::Company.Assignment_test.Assignment_testDomainModel), "Company.Assignment_test.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "Concern", PropertyDisplayNameKey="Company.Assignment_test.SoSAHasConcern/SoSA.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.PropagatesCopyToLinkAndOppositeRolePlayer, Multiplicity = DslModeling::Multiplicity.ZeroMany)]
+		[DslModeling::DomainObjectId("a42cea06-e333-4404-a9b4-9dae34af7b96")]
+		public virtual SoSA SoSA
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return (SoSA)DslModeling::DomainRoleInfo.GetRolePlayer(this, SoSADomainRoleId);
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetRolePlayer(this, SoSADomainRoleId, value);
+			}
+		}
+				
+		#endregion
+		#region Static methods to access SoSA of a Concern
+		/// <summary>
+		/// Gets SoSA.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static SoSA GetSoSA(Concern element)
+		{
+			return DslModeling::DomainRoleInfo.GetLinkedElement(element, ConcernDomainRoleId) as SoSA;
+		}
+		
+		/// <summary>
+		/// Sets SoSA.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static void SetSoSA(Concern element, SoSA newSoSA)
+		{
+			DslModeling::DomainRoleInfo.SetLinkedElement(element, ConcernDomainRoleId, newSoSA);
+		}
+		#endregion
+		#region Concern domain role code
+		
+		/// <summary>
+		/// Concern domain role Id.
+		/// </summary>
+		public static readonly global::System.Guid ConcernDomainRoleId = new global::System.Guid(0xddd662c0, 0x28a3, 0x4056, 0xba, 0x5e, 0x6a, 0x9b, 0x29, 0xe0, 0xb9, 0x11);
+		
+		/// <summary>
+		/// DomainRole Concern
+		/// Description for Company.Assignment_test.SoSAHasConcern.Concern
+		/// </summary>
+		[DslDesign::DisplayNameResource("Company.Assignment_test.SoSAHasConcern/Concern.DisplayName", typeof(global::Company.Assignment_test.Assignment_testDomainModel), "Company.Assignment_test.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("Company.Assignment_test.SoSAHasConcern/Concern.Description", typeof(global::Company.Assignment_test.Assignment_testDomainModel), "Company.Assignment_test.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Target, PropertyName = "SoSA", PropertyDisplayNameKey="Company.Assignment_test.SoSAHasConcern/Concern.PropertyDisplayName", PropagatesDelete = true,  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.One)]
+		[DslModeling::DomainObjectId("ddd662c0-28a3-4056-ba5e-6a9b29e0b911")]
+		public virtual Concern Concern
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return (Concern)DslModeling::DomainRoleInfo.GetRolePlayer(this, ConcernDomainRoleId);
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetRolePlayer(this, ConcernDomainRoleId, value);
+			}
+		}
+				
+		#endregion
+		#region Static methods to access Concern of a SoSA
+		/// <summary>
+		/// Gets a list of Concern.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static DslModeling::LinkedElementCollection<Concern> GetConcern(SoSA element)
+		{
+			return GetRoleCollection<DslModeling::LinkedElementCollection<Concern>, Concern>(element, SoSADomainRoleId);
+		}
+		#endregion
+		#region SoSA link accessor
+		/// <summary>
+		/// Get the list of SoSAHasConcern links to a SoSA.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::Company.Assignment_test.SoSAHasConcern> GetLinksToConcern ( global::Company.Assignment_test.SoSA soSAInstance )
+		{
+			return DslModeling::DomainRoleInfo.GetElementLinks<global::Company.Assignment_test.SoSAHasConcern>(soSAInstance, global::Company.Assignment_test.SoSAHasConcern.SoSADomainRoleId);
+		}
+		#endregion
+		#region Concern link accessor
+		/// <summary>
+		/// Get the SoSAHasConcern link to a Concern.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static global::Company.Assignment_test.SoSAHasConcern GetLinkToSoSA (global::Company.Assignment_test.Concern concernInstance)
+		{
+			global::System.Collections.Generic.IList<global::Company.Assignment_test.SoSAHasConcern> links = DslModeling::DomainRoleInfo.GetElementLinks<global::Company.Assignment_test.SoSAHasConcern>(concernInstance, global::Company.Assignment_test.SoSAHasConcern.ConcernDomainRoleId);
+			global::System.Diagnostics.Debug.Assert(links.Count <= 1, "Multiplicity of Concern not obeyed.");
+			if ( links.Count == 0 )
+			{
+				return null;
+			}
+			else
+			{
+				return links[0];
+			}
+		}
+		#endregion
+		#region SoSAHasConcern instance accessors
+		
+		/// <summary>
+		/// Get any SoSAHasConcern links between a given SoSA and a Concern.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::Company.Assignment_test.SoSAHasConcern> GetLinks( global::Company.Assignment_test.SoSA source, global::Company.Assignment_test.Concern target )
+		{
+			global::System.Collections.Generic.List<global::Company.Assignment_test.SoSAHasConcern> outLinks = new global::System.Collections.Generic.List<global::Company.Assignment_test.SoSAHasConcern>();
+			global::System.Collections.Generic.IList<global::Company.Assignment_test.SoSAHasConcern> links = DslModeling::DomainRoleInfo.GetElementLinks<global::Company.Assignment_test.SoSAHasConcern>(source, global::Company.Assignment_test.SoSAHasConcern.SoSADomainRoleId);
+			foreach ( global::Company.Assignment_test.SoSAHasConcern link in links )
+			{
+				if ( target.Equals(link.Concern) )
+				{
+					outLinks.Add(link);
+				}
+			}
+			return outLinks.AsReadOnly();
+		}
+		/// <summary>
+		/// Get the one SoSAHasConcern link between a given SoSAand a Concern.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static global::Company.Assignment_test.SoSAHasConcern GetLink( global::Company.Assignment_test.SoSA source, global::Company.Assignment_test.Concern target )
+		{
+			global::System.Collections.Generic.IList<global::Company.Assignment_test.SoSAHasConcern> links = DslModeling::DomainRoleInfo.GetElementLinks<global::Company.Assignment_test.SoSAHasConcern>(source, global::Company.Assignment_test.SoSAHasConcern.SoSADomainRoleId);
+			foreach ( global::Company.Assignment_test.SoSAHasConcern link in links )
+			{
+				if ( target.Equals(link.Concern) )
+				{
+					return link;
+				}
+			}
+			return null;
+		}
+		
+		#endregion
+	}
+}

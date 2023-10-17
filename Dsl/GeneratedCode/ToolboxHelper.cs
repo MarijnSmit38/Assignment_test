@@ -98,7 +98,7 @@ namespace Company.Assignment_test
 		{
 			get
 			{
-				return 5;
+				return 6;
 			}
 		}
 		
@@ -225,6 +225,22 @@ namespace Company.Assignment_test
 						"Solution_name", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("Solution_nameToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
 						CreateElementToolPrototype(store, global::Company.Assignment_test.Solution_name.DomainClassId), // ElementGroupPrototype (data object) representing model element on the toolbox.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
+						});
+					break;
+				case "Company.Assignment_test.ConcernToolboxItem":
+					// Add Concern shape tool.
+					result = new DslDesign::ModelingToolboxItem(
+						"Company.Assignment_test.ConcernToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						6, // Position relative to other items in the same toolbox tab.
+						resourceManager.GetString("ConcernToolboxItem", resourceCulture), // Localized display name for the item.
+						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("ConcernToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
+						"Company.Assignment_test.Assignment_testToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						resourceManager.GetString("Assignment_testToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
+						"Concern", // F1 help keyword for the toolbox item.
+						resourceManager.GetString("ConcernToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
+						CreateElementToolPrototype(store, global::Company.Assignment_test.Concern_shape.DomainClassId), // ElementGroupPrototype (data object) representing model element on the toolbox.
 						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});

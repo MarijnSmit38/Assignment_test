@@ -146,6 +146,12 @@ namespace Company.Assignment_test
 				if(newShape != null) newShape.Size = newShape.DefaultSize; // set default shape size
 				return newShape;
 			}
+			if(element is global::Company.Assignment_test.Concern)
+			{
+				global::Company.Assignment_test.Concern_shape newShape = new global::Company.Assignment_test.Concern_shape(this.Partition);
+				if(newShape != null) newShape.Size = newShape.DefaultSize; // set default shape size
+				return newShape;
+			}
 			return base.CreateChildShape(element);
 		}
 		#endregion
@@ -333,6 +339,7 @@ namespace Company.Assignment_test
 		[DslModeling::RuleOn(typeof(global::Company.Assignment_test.Enabling_impact_level), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::Company.Assignment_test.Immediate_impact_level), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::Company.Assignment_test.Solution_name), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
+		[DslModeling::RuleOn(typeof(global::Company.Assignment_test.Concern), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
 		internal sealed partial class FixUpDiagram : FixUpDiagramBase
 		{
 			[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
@@ -359,6 +366,10 @@ namespace Company.Assignment_test
 				if(childElement is global::Company.Assignment_test.Solution_name)
 				{
 					parentElement = GetParentForSolution_name((global::Company.Assignment_test.Solution_name)childElement);
+				} else
+				if(childElement is global::Company.Assignment_test.Concern)
+				{
+					parentElement = GetParentForConcern((global::Company.Assignment_test.Concern)childElement);
 				} else
 				{
 					parentElement = null;
@@ -412,6 +423,13 @@ namespace Company.Assignment_test
 				if ( root6 == null ) return null;
 				// Segments 6 and 7
 				global::Company.Assignment_test.SoSA result = root6.SoSA;
+				if ( result == null ) return null;
+				return result;
+			}
+			public static global::Company.Assignment_test.SoSA GetParentForConcern( global::Company.Assignment_test.Concern root )
+			{
+				// Segments 0 and 1
+				global::Company.Assignment_test.SoSA result = root.SoSA;
 				if ( result == null ) return null;
 				return result;
 			}
