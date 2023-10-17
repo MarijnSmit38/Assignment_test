@@ -1,1 +1,17 @@
-﻿ErrorGeneratingOutput
+﻿<!--DSL Tools Language Template-->
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TemplateData>
+		<TemplateID>{b8670cac-7b9c-4d4d-b9a9-3dc557d792e0}</TemplateID>
+		<Name Package="{0b7715c8-385d-4b6f-a8e5-b875c7badca8}" ID="103"/>
+		<Description Package="{0b7715c8-385d-4b6f-a8e5-b875c7badca8}" ID="102"/>
+		<Icon Package="{0b7715c8-385d-4b6f-a8e5-b875c7badca8}" ID="201" />
+		<ProjectType>VisualBasic</ProjectType>
+		<SortOrder>360</SortOrder>
+		<DefaultName>Assignment_test.Assignmenttest</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectItem TargetFileName="$fileinputname$.Assignmenttest">Assignmenttest.Assignmenttest</ProjectItem>
+		<ProjectItem TargetFileName="$fileinputname$.Assignmenttest.diagram">Assignmenttest.diagram</ProjectItem>
+	</TemplateContent>
+</VSTemplate>
+

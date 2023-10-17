@@ -58,7 +58,6 @@
       </ElementMergeDirectives>
     </DomainClass>
     <DomainClass Id="306c5a82-50ac-482a-9694-91d35880fad0" Description="Description for Company.Assignment_test.Solution_name" Name="Solution_name" DisplayName="Solution_name" Namespace="Company.Assignment_test" />
-    <DomainClass Id="94439e5f-b9c5-470b-88bb-ecf82c7c6b12" Description="Description for Company.Assignment_test.Social_concern" Name="Social_concern" DisplayName="Social_concern" Namespace="Company.Assignment_test" />
   </Classes>
   <Relationships>
     <DomainRelationship Id="afc52239-08c1-498a-aa76-88ee5af9f1f5" Description="Embedding relationship between the Model and Elements" Name="SoSAHasElements" DisplayName="So SAHas Elements" Namespace="Company.Assignment_test" IsEmbedding="true">
@@ -141,38 +140,6 @@
         </DomainRole>
       </Target>
     </DomainRelationship>
-    <DomainRelationship Id="516dd3ae-952e-4c38-810e-bbf6e03c1379" Description="Description for Company.Assignment_test.Social_concernReferencesTargetSocial_concern" Name="Social_concernReferencesTargetSocial_concern" DisplayName="Social_concern References Target Social_concern" Namespace="Company.Assignment_test">
-      <Source>
-        <DomainRole Id="3b807dec-1404-4a4c-ba57-ae21ded6484c" Description="Description for Company.Assignment_test.Social_concernReferencesTargetSocial_concern.SourceSocial_concern" Name="SourceSocial_concern" DisplayName="Source Social_concern" PropertyName="TargetSocial_concern" Multiplicity="OneMany" PropertyDisplayName="Target Social_concern">
-          <RolePlayer>
-            <DomainClassMoniker Name="Social_concern" />
-          </RolePlayer>
-        </DomainRole>
-      </Source>
-      <Target>
-        <DomainRole Id="78281aa2-9f65-482c-823b-c2e12ab5f85c" Description="Description for Company.Assignment_test.Social_concernReferencesTargetSocial_concern.TargetSocial_concern" Name="TargetSocial_concern" DisplayName="Target Social_concern" PropertyName="SourceSocial_concern" Multiplicity="OneMany" PropertyDisplayName="Source Social_concern">
-          <RolePlayer>
-            <DomainClassMoniker Name="Social_concern" />
-          </RolePlayer>
-        </DomainRole>
-      </Target>
-    </DomainRelationship>
-    <DomainRelationship Id="9e05b876-7fb7-4c5a-a725-8aa88705d003" Description="Description for Company.Assignment_test.Solution_nameReferencesSocial_concern" Name="Solution_nameReferencesSocial_concern" DisplayName="Solution_name References Social_concern" Namespace="Company.Assignment_test">
-      <Source>
-        <DomainRole Id="f248b3f1-721c-4a21-8fca-bb973260430a" Description="Description for Company.Assignment_test.Solution_nameReferencesSocial_concern.Solution_name" Name="Solution_name" DisplayName="Solution_name" PropertyName="Social_concern" Multiplicity="OneMany" PropertyDisplayName="Social_concern">
-          <RolePlayer>
-            <DomainClassMoniker Name="Solution_name" />
-          </RolePlayer>
-        </DomainRole>
-      </Source>
-      <Target>
-        <DomainRole Id="7ea0faf8-650c-46ad-a60a-09f9cf944a41" Description="Description for Company.Assignment_test.Solution_nameReferencesSocial_concern.Social_concern" Name="Social_concern" DisplayName="Social_concern" PropertyName="Solution_name" Multiplicity="OneMany" PropertyDisplayName="Solution_name">
-          <RolePlayer>
-            <DomainClassMoniker Name="Social_concern" />
-          </RolePlayer>
-        </DomainRole>
-      </Target>
-    </DomainRelationship>
   </Relationships>
   <Types>
     <ExternalType Name="DateTime" Namespace="System" />
@@ -201,7 +168,6 @@
     <GeometryShape Id="27fe486e-974b-42ea-b9c5-05f00610d856" Description="Description for Company.Assignment_test.Enabling_shape" Name="Enabling_shape" DisplayName="Enabling_shape" Namespace="Company.Assignment_test" FixedTooltipText="Enabling_shape" FillColor="DarkGray" OutlineColor="Transparent" InitialHeight="1" Geometry="Ellipse" />
     <GeometryShape Id="2e60d001-6010-4d8b-ae63-c1791152b709" Description="Description for Company.Assignment_test.Immediate_shape" Name="Immediate_shape" DisplayName="Immediate_shape" Namespace="Company.Assignment_test" FixedTooltipText="Immediate_shape" FillColor="Gainsboro" InitialHeight="1" Geometry="Ellipse" />
     <GeometryShape Id="5e524231-7a91-4845-ad66-8615a6506ea8" Description="Description for Company.Assignment_test.Solution_name_shape" Name="Solution_name_shape" DisplayName="Solution_name_shape" Namespace="Company.Assignment_test" FixedTooltipText="Solution_name_shape" InitialHeight="1" Geometry="Rectangle" />
-    <GeometryShape Id="6081ee76-b85c-4ab5-8915-5667ebcce2bb" Description="Description for Company.Assignment_test.Social_concern_shape" Name="Social_concern_shape" DisplayName="Social_concern_shape" Namespace="Company.Assignment_test" FixedTooltipText="Social_concern_shape" FillColor="Gold" InitialHeight="1" Geometry="Rectangle" />
   </Shapes>
   <Connectors>
     <Connector Id="ce18bfc8-3edc-4c18-80cd-a80877729503" Description="Connector between the ExampleShapes. Represents ExampleRelationships on the Diagram." Name="ExampleConnector" DisplayName="Example Connector" Namespace="Company.Assignment_test" FixedTooltipText="Example Connector" Color="113, 111, 110" TargetEndStyle="EmptyArrow" Thickness="0.01" />
@@ -278,31 +244,9 @@
       </XmlClassData>
       <XmlClassData TypeName="Solution_name" MonikerAttributeName="" SerializeId="true" MonikerElementName="solution_nameMoniker" ElementName="solution_name" MonikerTypeName="Solution_nameMoniker">
         <DomainClassMoniker Name="Solution_name" />
-        <ElementData>
-          <XmlRelationshipData UseFullForm="true" RoleElementName="social_concern">
-            <DomainRelationshipMoniker Name="Solution_nameReferencesSocial_concern" />
-          </XmlRelationshipData>
-        </ElementData>
       </XmlClassData>
       <XmlClassData TypeName="Solution_name_shape" MonikerAttributeName="" SerializeId="true" MonikerElementName="solution_name_shapeMoniker" ElementName="solution_name_shape" MonikerTypeName="Solution_name_shapeMoniker">
         <GeometryShapeMoniker Name="Solution_name_shape" />
-      </XmlClassData>
-      <XmlClassData TypeName="Social_concern" MonikerAttributeName="" SerializeId="true" MonikerElementName="social_concernMoniker" ElementName="social_concern" MonikerTypeName="Social_concernMoniker">
-        <DomainClassMoniker Name="Social_concern" />
-        <ElementData>
-          <XmlRelationshipData UseFullForm="true" RoleElementName="targetSocial_concern">
-            <DomainRelationshipMoniker Name="Social_concernReferencesTargetSocial_concern" />
-          </XmlRelationshipData>
-        </ElementData>
-      </XmlClassData>
-      <XmlClassData TypeName="Social_concernReferencesTargetSocial_concern" MonikerAttributeName="" SerializeId="true" MonikerElementName="social_concernReferencesTargetSocial_concernMoniker" ElementName="social_concernReferencesTargetSocial_concern" MonikerTypeName="Social_concernReferencesTargetSocial_concernMoniker">
-        <DomainRelationshipMoniker Name="Social_concernReferencesTargetSocial_concern" />
-      </XmlClassData>
-      <XmlClassData TypeName="Social_concern_shape" MonikerAttributeName="" SerializeId="true" MonikerElementName="social_concern_shapeMoniker" ElementName="social_concern_shape" MonikerTypeName="Social_concern_shapeMoniker">
-        <GeometryShapeMoniker Name="Social_concern_shape" />
-      </XmlClassData>
-      <XmlClassData TypeName="Solution_nameReferencesSocial_concern" MonikerAttributeName="" SerializeId="true" MonikerElementName="solution_nameReferencesSocial_concernMoniker" ElementName="solution_nameReferencesSocial_concern" MonikerTypeName="Solution_nameReferencesSocial_concernMoniker">
-        <DomainRelationshipMoniker Name="Solution_nameReferencesSocial_concern" />
       </XmlClassData>
     </ClassData>
   </XmlSerializationBehavior>
@@ -323,44 +267,6 @@
           <RolePlayerConnectDirective>
             <AcceptingClass>
               <DomainClassMoniker Name="Systematic_impact_level" />
-            </AcceptingClass>
-          </RolePlayerConnectDirective>
-        </TargetDirectives>
-      </LinkConnectDirective>
-    </ConnectionBuilder>
-    <ConnectionBuilder Name="Social_concernReferencesTargetSocial_concernBuilder">
-      <LinkConnectDirective>
-        <DomainRelationshipMoniker Name="Social_concernReferencesTargetSocial_concern" />
-        <SourceDirectives>
-          <RolePlayerConnectDirective>
-            <AcceptingClass>
-              <DomainClassMoniker Name="Social_concern" />
-            </AcceptingClass>
-          </RolePlayerConnectDirective>
-        </SourceDirectives>
-        <TargetDirectives>
-          <RolePlayerConnectDirective>
-            <AcceptingClass>
-              <DomainClassMoniker Name="Social_concern" />
-            </AcceptingClass>
-          </RolePlayerConnectDirective>
-        </TargetDirectives>
-      </LinkConnectDirective>
-    </ConnectionBuilder>
-    <ConnectionBuilder Name="Solution_nameReferencesSocial_concernBuilder">
-      <LinkConnectDirective>
-        <DomainRelationshipMoniker Name="Solution_nameReferencesSocial_concern" />
-        <SourceDirectives>
-          <RolePlayerConnectDirective>
-            <AcceptingClass>
-              <DomainClassMoniker Name="Solution_name" />
-            </AcceptingClass>
-          </RolePlayerConnectDirective>
-        </SourceDirectives>
-        <TargetDirectives>
-          <RolePlayerConnectDirective>
-            <AcceptingClass>
-              <DomainClassMoniker Name="Social_concern" />
             </AcceptingClass>
           </RolePlayerConnectDirective>
         </TargetDirectives>
@@ -408,20 +314,7 @@
         </ParentElementPath>
         <GeometryShapeMoniker Name="Solution_name_shape" />
       </ShapeMap>
-      <ShapeMap>
-        <DomainClassMoniker Name="Social_concern" />
-        <ParentElementPath>
-          <DomainPath />
-        </ParentElementPath>
-        <GeometryShapeMoniker Name="Social_concern_shape" />
-      </ShapeMap>
     </ShapeMaps>
-    <ConnectorMaps>
-      <ConnectorMap>
-        <ConnectorMoniker Name="ExampleConnector" />
-        <DomainRelationshipMoniker Name="Social_concernReferencesTargetSocial_concern" />
-      </ConnectorMap>
-    </ConnectorMaps>
   </Diagram>
   <Designer CopyPasteGeneration="CopyPasteOnly" FileExtension="Assignmenttest" EditorGuid="fd60bbe6-9ddf-4e5d-9cd6-5e97a91c800b">
     <RootClass>
@@ -440,14 +333,11 @@
       <ElementTool Name="Enabling_impact_level" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="Enabling_impact_level" Tooltip="Enabling_impact_level" HelpKeyword="Enabling_impact_level">
         <DomainClassMoniker Name="Enabling_impact_level" />
       </ElementTool>
-      <ElementTool Name="Immediate" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="Immediate" Tooltip="Immediate" HelpKeyword="Immediate">
+      <ElementTool Name="Immediate_impact_level" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="Immediate_impact_level" Tooltip="Immediate_impact_level" HelpKeyword="Immediate_impact_level">
         <DomainClassMoniker Name="Immediate_impact_level" />
       </ElementTool>
       <ElementTool Name="Solution_name" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="Solution_name" Tooltip="Solution_name" HelpKeyword="Solution_name">
         <DomainClassMoniker Name="Solution_name" />
-      </ElementTool>
-      <ElementTool Name="Social_concern" Caption="Social_concern" Tooltip="Social_concern" HelpKeyword="Social_concern">
-        <DomainClassMoniker Name="Social_concern" />
       </ElementTool>
     </ToolboxTab>
     <Validation UsesMenu="false" UsesOpen="false" UsesSave="false" UsesLoad="false" />
