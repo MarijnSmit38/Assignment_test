@@ -358,6 +358,22 @@ namespace Company.Assignment_test
 			}
 		}
 		#endregion
+		#region Concern opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of Concern.
+		/// Description for
+		/// Company.Assignment_test.Systematic_impact_levelHasConcern.Systematic_impact_level
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<Concern> Concern
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<Concern>, Concern>(global::Company.Assignment_test.Systematic_impact_levelHasConcern.Systematic_impact_levelDomainRoleId);
+			}
+		}
+		#endregion
 		#region ElementGroupPrototype Merge methods
 		/// <summary>
 		/// Returns a value indicating whether the source element represented by the
@@ -385,6 +401,11 @@ namespace Company.Assignment_test
 					{
 						return false;
 					}
+					return true;
+				}
+				
+				if (rootElementDomainInfo.IsDerivedFrom(global::Company.Assignment_test.Concern.DomainClassId)) 
+				{
 					return true;
 				}
 			}
@@ -420,6 +441,15 @@ namespace Company.Assignment_test
 
 				return;
 			}
+				
+			global::Company.Assignment_test.Concern sourceConcern2 = sourceElement as global::Company.Assignment_test.Concern;
+			if (sourceConcern2 != null)
+			{
+				// Create link for path Systematic_impact_levelHasConcern.Concern
+				this.Concern.Add(sourceConcern2);
+
+				return;
+			}
 		
 			// Sdk workaround to runtime bug #879350 (DSL: can't copy and paste a MEL that has a MEX). Avoid MergeRelate on ModelElementExtension
 			// during a "Paste".
@@ -452,6 +482,20 @@ namespace Company.Assignment_test
 				{
 					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
 					link.Delete(global::Company.Assignment_test.Systematic_impact_levelHasEnabling_impact_level.Systematic_impact_levelDomainRoleId, global::Company.Assignment_test.Systematic_impact_levelHasEnabling_impact_level.Enabling_impact_levelDomainRoleId);
+				}
+
+				return;
+			}
+				
+			global::Company.Assignment_test.Concern sourceConcern2 = sourceElement as global::Company.Assignment_test.Concern;
+			if (sourceConcern2 != null)
+			{
+				// Delete link for path Systematic_impact_levelHasConcern.Concern
+				
+				foreach (DslModeling::ElementLink link in global::Company.Assignment_test.Systematic_impact_levelHasConcern.GetLinks((global::Company.Assignment_test.Systematic_impact_level)this, sourceConcern2))
+				{
+					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
+					link.Delete(global::Company.Assignment_test.Systematic_impact_levelHasConcern.Systematic_impact_levelDomainRoleId, global::Company.Assignment_test.Systematic_impact_levelHasConcern.ConcernDomainRoleId);
 				}
 
 				return;
@@ -541,6 +585,22 @@ namespace Company.Assignment_test
 			}
 		}
 		#endregion
+		#region Concern opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of Concern.
+		/// Description for
+		/// Company.Assignment_test.Enabling_impact_levelHasConcern.Enabling_impact_level
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<Concern> Concern
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<Concern>, Concern>(global::Company.Assignment_test.Enabling_impact_levelHasConcern.Enabling_impact_levelDomainRoleId);
+			}
+		}
+		#endregion
 		#region ElementGroupPrototype Merge methods
 		/// <summary>
 		/// Returns a value indicating whether the source element represented by the
@@ -568,6 +628,11 @@ namespace Company.Assignment_test
 					{
 						return false;
 					}
+					return true;
+				}
+				
+				if (rootElementDomainInfo.IsDerivedFrom(global::Company.Assignment_test.Concern.DomainClassId)) 
+				{
 					return true;
 				}
 			}
@@ -603,6 +668,15 @@ namespace Company.Assignment_test
 
 				return;
 			}
+				
+			global::Company.Assignment_test.Concern sourceConcern2 = sourceElement as global::Company.Assignment_test.Concern;
+			if (sourceConcern2 != null)
+			{
+				// Create link for path Enabling_impact_levelHasConcern.Concern
+				this.Concern.Add(sourceConcern2);
+
+				return;
+			}
 		
 			// Sdk workaround to runtime bug #879350 (DSL: can't copy and paste a MEL that has a MEX). Avoid MergeRelate on ModelElementExtension
 			// during a "Paste".
@@ -635,6 +709,20 @@ namespace Company.Assignment_test
 				{
 					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
 					link.Delete(global::Company.Assignment_test.Enabling_impact_levelHasImmediate_impact_level.Enabling_impact_levelDomainRoleId, global::Company.Assignment_test.Enabling_impact_levelHasImmediate_impact_level.Immediate_impact_levelDomainRoleId);
+				}
+
+				return;
+			}
+				
+			global::Company.Assignment_test.Concern sourceConcern2 = sourceElement as global::Company.Assignment_test.Concern;
+			if (sourceConcern2 != null)
+			{
+				// Delete link for path Enabling_impact_levelHasConcern.Concern
+				
+				foreach (DslModeling::ElementLink link in global::Company.Assignment_test.Enabling_impact_levelHasConcern.GetLinks((global::Company.Assignment_test.Enabling_impact_level)this, sourceConcern2))
+				{
+					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
+					link.Delete(global::Company.Assignment_test.Enabling_impact_levelHasConcern.Enabling_impact_levelDomainRoleId, global::Company.Assignment_test.Enabling_impact_levelHasConcern.ConcernDomainRoleId);
 				}
 
 				return;
@@ -720,6 +808,22 @@ namespace Company.Assignment_test
 			}
 		}
 		#endregion
+		#region Concern opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of Concern.
+		/// Description for
+		/// Company.Assignment_test.Immediate_impact_levelHasConcern.Immediate_impact_level
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<Concern> Concern
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<Concern>, Concern>(global::Company.Assignment_test.Immediate_impact_levelHasConcern.Immediate_impact_levelDomainRoleId);
+			}
+		}
+		#endregion
 		#region ElementGroupPrototype Merge methods
 		/// <summary>
 		/// Returns a value indicating whether the source element represented by the
@@ -741,6 +845,11 @@ namespace Company.Assignment_test
 				DslModeling::DomainClassInfo rootElementDomainInfo = this.Partition.DomainDataDirectory.GetDomainClass(rootElement.DomainClassId);
 				
 				if (rootElementDomainInfo.IsDerivedFrom(global::Company.Assignment_test.Solution_name.DomainClassId)) 
+				{
+					return true;
+				}
+				
+				if (rootElementDomainInfo.IsDerivedFrom(global::Company.Assignment_test.Concern.DomainClassId)) 
 				{
 					return true;
 				}
@@ -777,6 +886,15 @@ namespace Company.Assignment_test
 
 				return;
 			}
+				
+			global::Company.Assignment_test.Concern sourceConcern2 = sourceElement as global::Company.Assignment_test.Concern;
+			if (sourceConcern2 != null)
+			{
+				// Create link for path Immediate_impact_levelHasConcern.Concern
+				this.Concern.Add(sourceConcern2);
+
+				return;
+			}
 		
 			// Sdk workaround to runtime bug #879350 (DSL: can't copy and paste a MEL that has a MEX). Avoid MergeRelate on ModelElementExtension
 			// during a "Paste".
@@ -809,6 +927,20 @@ namespace Company.Assignment_test
 				{
 					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
 					link.Delete(global::Company.Assignment_test.Immediate_impact_levelHasSolution_name.Immediate_impact_levelDomainRoleId, global::Company.Assignment_test.Immediate_impact_levelHasSolution_name.Solution_nameDomainRoleId);
+				}
+
+				return;
+			}
+				
+			global::Company.Assignment_test.Concern sourceConcern2 = sourceElement as global::Company.Assignment_test.Concern;
+			if (sourceConcern2 != null)
+			{
+				// Delete link for path Immediate_impact_levelHasConcern.Concern
+				
+				foreach (DslModeling::ElementLink link in global::Company.Assignment_test.Immediate_impact_levelHasConcern.GetLinks((global::Company.Assignment_test.Immediate_impact_level)this, sourceConcern2))
+				{
+					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
+					link.Delete(global::Company.Assignment_test.Immediate_impact_levelHasConcern.Immediate_impact_levelDomainRoleId, global::Company.Assignment_test.Immediate_impact_levelHasConcern.ConcernDomainRoleId);
 				}
 
 				return;
@@ -876,6 +1008,388 @@ namespace Company.Assignment_test
 			{
 				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::Company.Assignment_test.Immediate_impact_levelHasSolution_name.Solution_nameDomainRoleId, value);
 			}
+		}
+		#endregion
+	}
+}
+namespace Company.Assignment_test
+{
+	/// <summary>
+	/// DomainClass Concern
+	/// Description for Company.Assignment_test.Concern
+	/// </summary>
+	[DslDesign::DisplayNameResource("Company.Assignment_test.Concern.DisplayName", typeof(global::Company.Assignment_test.Assignment_testDomainModel), "Company.Assignment_test.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("Company.Assignment_test.Concern.Description", typeof(global::Company.Assignment_test.Assignment_testDomainModel), "Company.Assignment_test.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::Company.Assignment_test.Assignment_testDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("20578f92-156e-42cc-883a-b2c453e93110")]
+	public partial class Concern : DslModeling::ModelElement
+	{
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// Concern domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x20578f92, 0x156e, 0x42cc, 0x88, 0x3a, 0xb2, 0xc4, 0x53, 0xe9, 0x31, 0x10);
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public Concern(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public Concern(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
+		}
+		#endregion
+		#region Name domain property code
+		
+		/// <summary>
+		/// Name domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid NameDomainPropertyId = new global::System.Guid(0x5080179d, 0x20ac, 0x412b, 0x82, 0x82, 0x7c, 0x5d, 0x68, 0xf7, 0x93, 0x71);
+		
+		/// <summary>
+		/// Storage for Name
+		/// </summary>
+		private global::System.String namePropertyStorage = string.Empty;
+		
+		/// <summary>
+		/// Gets or sets the value of Name domain property.
+		/// Description for Company.Assignment_test.Concern.Name
+		/// </summary>
+		[DslDesign::DisplayNameResource("Company.Assignment_test.Concern/Name.DisplayName", typeof(global::Company.Assignment_test.Assignment_testDomainModel), "Company.Assignment_test.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("Company.Assignment_test.Concern/Name.Description", typeof(global::Company.Assignment_test.Assignment_testDomainModel), "Company.Assignment_test.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("5080179d-20ac-412b-8282-7c5d68f79371")]
+		public global::System.String Name
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return namePropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				NamePropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the Concern.Name domain property.
+		/// </summary>
+		internal sealed partial class NamePropertyHandler : DslModeling::DomainPropertyValueHandler<Concern, global::System.String>
+		{
+			private NamePropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the Concern.Name domain property value handler.
+			/// </summary>
+			public static readonly NamePropertyHandler Instance = new NamePropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the Concern.Name domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return NameDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.String GetValue(Concern element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.namePropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(Concern element, global::System.String newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.String oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.namePropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region TargetConcern opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of TargetConcern.
+		/// Description for
+		/// Company.Assignment_test.ConcernReferencesTargetConcern.SourceConcern
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<Concern> TargetConcern
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<Concern>, Concern>(global::Company.Assignment_test.ConcernReferencesTargetConcern.SourceConcernDomainRoleId);
+			}
+		}
+		#endregion
+		#region SourceConcern opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of SourceConcern.
+		/// Description for
+		/// Company.Assignment_test.ConcernReferencesTargetConcern.TargetConcern
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<Concern> SourceConcern
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<Concern>, Concern>(global::Company.Assignment_test.ConcernReferencesTargetConcern.TargetConcernDomainRoleId);
+			}
+		}
+		#endregion
+		#region Systematic_impact_level opposite domain role accessor
+		/// <summary>
+		/// Gets or sets Systematic_impact_level.
+		/// Description for
+		/// Company.Assignment_test.Systematic_impact_levelHasConcern.Concern
+		/// </summary>
+		public virtual Systematic_impact_level Systematic_impact_level
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::Company.Assignment_test.Systematic_impact_levelHasConcern.ConcernDomainRoleId) as Systematic_impact_level;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::Company.Assignment_test.Systematic_impact_levelHasConcern.ConcernDomainRoleId, value);
+			}
+		}
+		#endregion
+		#region Enabling_impact_level opposite domain role accessor
+		/// <summary>
+		/// Gets or sets Enabling_impact_level.
+		/// Description for Company.Assignment_test.Enabling_impact_levelHasConcern.Concern
+		/// </summary>
+		public virtual Enabling_impact_level Enabling_impact_level
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::Company.Assignment_test.Enabling_impact_levelHasConcern.ConcernDomainRoleId) as Enabling_impact_level;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::Company.Assignment_test.Enabling_impact_levelHasConcern.ConcernDomainRoleId, value);
+			}
+		}
+		#endregion
+		#region Immediate_impact_level opposite domain role accessor
+		/// <summary>
+		/// Gets or sets Immediate_impact_level.
+		/// Description for Company.Assignment_test.Immediate_impact_levelHasConcern.Concern
+		/// </summary>
+		public virtual Immediate_impact_level Immediate_impact_level
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::Company.Assignment_test.Immediate_impact_levelHasConcern.ConcernDomainRoleId) as Immediate_impact_level;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::Company.Assignment_test.Immediate_impact_levelHasConcern.ConcernDomainRoleId, value);
+			}
+		}
+		#endregion
+	}
+}
+namespace Company.Assignment_test
+{
+	/// <summary>
+	/// DomainClass SocialConcern
+	/// Description for Company.Assignment_test.SocialConcern
+	/// </summary>
+	[DslDesign::DisplayNameResource("Company.Assignment_test.SocialConcern.DisplayName", typeof(global::Company.Assignment_test.Assignment_testDomainModel), "Company.Assignment_test.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("Company.Assignment_test.SocialConcern.Description", typeof(global::Company.Assignment_test.Assignment_testDomainModel), "Company.Assignment_test.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::Company.Assignment_test.Assignment_testDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("575942a3-df2d-4e32-b89d-73a9a129d38d")]
+	public partial class SocialConcern : Concern
+	{
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// SocialConcern domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x575942a3, 0xdf2d, 0x4e32, 0xb8, 0x9d, 0x73, 0xa9, 0xa1, 0x29, 0xd3, 0x8d);
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public SocialConcern(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public SocialConcern(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
+		}
+		#endregion
+	}
+}
+namespace Company.Assignment_test
+{
+	/// <summary>
+	/// DomainClass TechnicalConcern
+	/// Description for Company.Assignment_test.TechnicalConcern
+	/// </summary>
+	[DslDesign::DisplayNameResource("Company.Assignment_test.TechnicalConcern.DisplayName", typeof(global::Company.Assignment_test.Assignment_testDomainModel), "Company.Assignment_test.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("Company.Assignment_test.TechnicalConcern.Description", typeof(global::Company.Assignment_test.Assignment_testDomainModel), "Company.Assignment_test.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::Company.Assignment_test.Assignment_testDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("c8d0fae8-05aa-4c2e-a298-051660a3f301")]
+	public partial class TechnicalConcern : Concern
+	{
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// TechnicalConcern domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0xc8d0fae8, 0x05aa, 0x4c2e, 0xa2, 0x98, 0x05, 0x16, 0x60, 0xa3, 0xf3, 0x01);
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public TechnicalConcern(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public TechnicalConcern(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
+		}
+		#endregion
+	}
+}
+namespace Company.Assignment_test
+{
+	/// <summary>
+	/// DomainClass EnvironmentalConcern
+	/// Description for Company.Assignment_test.EnvironmentalConcern
+	/// </summary>
+	[DslDesign::DisplayNameResource("Company.Assignment_test.EnvironmentalConcern.DisplayName", typeof(global::Company.Assignment_test.Assignment_testDomainModel), "Company.Assignment_test.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("Company.Assignment_test.EnvironmentalConcern.Description", typeof(global::Company.Assignment_test.Assignment_testDomainModel), "Company.Assignment_test.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::Company.Assignment_test.Assignment_testDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("2dbe8119-aa7d-4548-add3-c6a17b033715")]
+	public partial class EnvironmentalConcern : Concern
+	{
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// EnvironmentalConcern domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x2dbe8119, 0xaa7d, 0x4548, 0xad, 0xd3, 0xc6, 0xa1, 0x7b, 0x03, 0x37, 0x15);
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public EnvironmentalConcern(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public EnvironmentalConcern(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
+		}
+		#endregion
+	}
+}
+namespace Company.Assignment_test
+{
+	/// <summary>
+	/// DomainClass EconomicConcern
+	/// Description for Company.Assignment_test.EconomicConcern
+	/// </summary>
+	[DslDesign::DisplayNameResource("Company.Assignment_test.EconomicConcern.DisplayName", typeof(global::Company.Assignment_test.Assignment_testDomainModel), "Company.Assignment_test.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("Company.Assignment_test.EconomicConcern.Description", typeof(global::Company.Assignment_test.Assignment_testDomainModel), "Company.Assignment_test.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::Company.Assignment_test.Assignment_testDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("e3b32c2d-1f9a-4877-bb4a-9cdd8ed21860")]
+	public partial class EconomicConcern : Concern
+	{
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// EconomicConcern domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0xe3b32c2d, 0x1f9a, 0x4877, 0xbb, 0x4a, 0x9c, 0xdd, 0x8e, 0xd2, 0x18, 0x60);
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public EconomicConcern(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public EconomicConcern(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
 		}
 		#endregion
 	}

@@ -122,6 +122,30 @@ namespace Company.Assignment_test
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Generated code.")]
 		protected override DslDiagrams::ShapeElement CreateChildShape(DslModeling::ModelElement element)
 		{
+			if(element is global::Company.Assignment_test.SocialConcern)
+			{
+				global::Company.Assignment_test.SocialConcernShape newShape = new global::Company.Assignment_test.SocialConcernShape(this.Partition);
+				if(newShape != null) newShape.Size = newShape.DefaultSize; // set default shape size
+				return newShape;
+			}
+			if(element is global::Company.Assignment_test.TechnicalConcern)
+			{
+				global::Company.Assignment_test.TechnicalConcernShape newShape = new global::Company.Assignment_test.TechnicalConcernShape(this.Partition);
+				if(newShape != null) newShape.Size = newShape.DefaultSize; // set default shape size
+				return newShape;
+			}
+			if(element is global::Company.Assignment_test.EnvironmentalConcern)
+			{
+				global::Company.Assignment_test.EnvironmentalConcernShape newShape = new global::Company.Assignment_test.EnvironmentalConcernShape(this.Partition);
+				if(newShape != null) newShape.Size = newShape.DefaultSize; // set default shape size
+				return newShape;
+			}
+			if(element is global::Company.Assignment_test.EconomicConcern)
+			{
+				global::Company.Assignment_test.EconomicConcernShape newShape = new global::Company.Assignment_test.EconomicConcernShape(this.Partition);
+				if(newShape != null) newShape.Size = newShape.DefaultSize; // set default shape size
+				return newShape;
+			}
 			if(element is global::Company.Assignment_test.Systematic_impact_level)
 			{
 				global::Company.Assignment_test.Systematic_shape newShape = new global::Company.Assignment_test.Systematic_shape(this.Partition);
@@ -143,6 +167,12 @@ namespace Company.Assignment_test
 			if(element is global::Company.Assignment_test.Solution_name)
 			{
 				global::Company.Assignment_test.Solution_name_shape newShape = new global::Company.Assignment_test.Solution_name_shape(this.Partition);
+				if(newShape != null) newShape.Size = newShape.DefaultSize; // set default shape size
+				return newShape;
+			}
+			if(element is global::Company.Assignment_test.Concern)
+			{
+				global::Company.Assignment_test.ConcernShape newShape = new global::Company.Assignment_test.ConcernShape(this.Partition);
 				if(newShape != null) newShape.Size = newShape.DefaultSize; // set default shape size
 				return newShape;
 			}
@@ -329,10 +359,15 @@ namespace Company.Assignment_test
 		/// <summary>
 		/// Rule that initiates view fixup when an element that has an associated shape is added to the model. 
 		/// </summary>
+		[DslModeling::RuleOn(typeof(global::Company.Assignment_test.SocialConcern), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
+		[DslModeling::RuleOn(typeof(global::Company.Assignment_test.TechnicalConcern), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
+		[DslModeling::RuleOn(typeof(global::Company.Assignment_test.EnvironmentalConcern), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
+		[DslModeling::RuleOn(typeof(global::Company.Assignment_test.EconomicConcern), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::Company.Assignment_test.Systematic_impact_level), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::Company.Assignment_test.Enabling_impact_level), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::Company.Assignment_test.Immediate_impact_level), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::Company.Assignment_test.Solution_name), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
+		[DslModeling::RuleOn(typeof(global::Company.Assignment_test.Concern), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
 		internal sealed partial class FixUpDiagram : FixUpDiagramBase
 		{
 			[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
@@ -344,6 +379,22 @@ namespace Company.Assignment_test
 				if (this.SkipFixup(childElement))
 					return;
 				DslModeling::ModelElement parentElement;
+				if(childElement is global::Company.Assignment_test.SocialConcern)
+				{
+					parentElement = GetParentForSocialConcern((global::Company.Assignment_test.SocialConcern)childElement);
+				} else
+				if(childElement is global::Company.Assignment_test.TechnicalConcern)
+				{
+					parentElement = GetParentForTechnicalConcern((global::Company.Assignment_test.TechnicalConcern)childElement);
+				} else
+				if(childElement is global::Company.Assignment_test.EnvironmentalConcern)
+				{
+					parentElement = GetParentForEnvironmentalConcern((global::Company.Assignment_test.EnvironmentalConcern)childElement);
+				} else
+				if(childElement is global::Company.Assignment_test.EconomicConcern)
+				{
+					parentElement = GetParentForEconomicConcern((global::Company.Assignment_test.EconomicConcern)childElement);
+				} else
 				if(childElement is global::Company.Assignment_test.Systematic_impact_level)
 				{
 					parentElement = GetParentForSystematic_impact_level((global::Company.Assignment_test.Systematic_impact_level)childElement);
@@ -359,6 +410,10 @@ namespace Company.Assignment_test
 				if(childElement is global::Company.Assignment_test.Solution_name)
 				{
 					parentElement = GetParentForSolution_name((global::Company.Assignment_test.Solution_name)childElement);
+				} else
+				if(childElement is global::Company.Assignment_test.Concern)
+				{
+					parentElement = GetParentForConcern((global::Company.Assignment_test.Concern)childElement);
 				} else
 				{
 					parentElement = null;
@@ -400,6 +455,86 @@ namespace Company.Assignment_test
 				return result;
 			}
 			public static global::Company.Assignment_test.SoSA GetParentForSolution_name( global::Company.Assignment_test.Solution_name root )
+			{
+				// Segments 0 and 1
+				global::Company.Assignment_test.Immediate_impact_level root2 = root.Immediate_impact_level;
+				if ( root2 == null ) return null;
+				// Segments 2 and 3
+				global::Company.Assignment_test.Enabling_impact_level root4 = root2.Enabling_impact_level;
+				if ( root4 == null ) return null;
+				// Segments 4 and 5
+				global::Company.Assignment_test.Systematic_impact_level root6 = root4.Systematic_impact_level;
+				if ( root6 == null ) return null;
+				// Segments 6 and 7
+				global::Company.Assignment_test.SoSA result = root6.SoSA;
+				if ( result == null ) return null;
+				return result;
+			}
+			public static global::Company.Assignment_test.SoSA GetParentForConcern( global::Company.Assignment_test.Concern root )
+			{
+				// Segments 0 and 1
+				global::Company.Assignment_test.Immediate_impact_level root2 = root.Immediate_impact_level;
+				if ( root2 == null ) return null;
+				// Segments 2 and 3
+				global::Company.Assignment_test.Enabling_impact_level root4 = root2.Enabling_impact_level;
+				if ( root4 == null ) return null;
+				// Segments 4 and 5
+				global::Company.Assignment_test.Systematic_impact_level root6 = root4.Systematic_impact_level;
+				if ( root6 == null ) return null;
+				// Segments 6 and 7
+				global::Company.Assignment_test.SoSA result = root6.SoSA;
+				if ( result == null ) return null;
+				return result;
+			}
+			public static global::Company.Assignment_test.SoSA GetParentForSocialConcern( global::Company.Assignment_test.Concern root )
+			{
+				// Segments 0 and 1
+				global::Company.Assignment_test.Immediate_impact_level root2 = root.Immediate_impact_level;
+				if ( root2 == null ) return null;
+				// Segments 2 and 3
+				global::Company.Assignment_test.Enabling_impact_level root4 = root2.Enabling_impact_level;
+				if ( root4 == null ) return null;
+				// Segments 4 and 5
+				global::Company.Assignment_test.Systematic_impact_level root6 = root4.Systematic_impact_level;
+				if ( root6 == null ) return null;
+				// Segments 6 and 7
+				global::Company.Assignment_test.SoSA result = root6.SoSA;
+				if ( result == null ) return null;
+				return result;
+			}
+			public static global::Company.Assignment_test.SoSA GetParentForTechnicalConcern( global::Company.Assignment_test.Concern root )
+			{
+				// Segments 0 and 1
+				global::Company.Assignment_test.Immediate_impact_level root2 = root.Immediate_impact_level;
+				if ( root2 == null ) return null;
+				// Segments 2 and 3
+				global::Company.Assignment_test.Enabling_impact_level root4 = root2.Enabling_impact_level;
+				if ( root4 == null ) return null;
+				// Segments 4 and 5
+				global::Company.Assignment_test.Systematic_impact_level root6 = root4.Systematic_impact_level;
+				if ( root6 == null ) return null;
+				// Segments 6 and 7
+				global::Company.Assignment_test.SoSA result = root6.SoSA;
+				if ( result == null ) return null;
+				return result;
+			}
+			public static global::Company.Assignment_test.SoSA GetParentForEnvironmentalConcern( global::Company.Assignment_test.Concern root )
+			{
+				// Segments 0 and 1
+				global::Company.Assignment_test.Immediate_impact_level root2 = root.Immediate_impact_level;
+				if ( root2 == null ) return null;
+				// Segments 2 and 3
+				global::Company.Assignment_test.Enabling_impact_level root4 = root2.Enabling_impact_level;
+				if ( root4 == null ) return null;
+				// Segments 4 and 5
+				global::Company.Assignment_test.Systematic_impact_level root6 = root4.Systematic_impact_level;
+				if ( root6 == null ) return null;
+				// Segments 6 and 7
+				global::Company.Assignment_test.SoSA result = root6.SoSA;
+				if ( result == null ) return null;
+				return result;
+			}
+			public static global::Company.Assignment_test.SoSA GetParentForEconomicConcern( global::Company.Assignment_test.Concern root )
 			{
 				// Segments 0 and 1
 				global::Company.Assignment_test.Immediate_impact_level root2 = root.Immediate_impact_level;

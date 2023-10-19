@@ -173,6 +173,54 @@
     <value>Solution_name</value>
     <comment>DisplayName for DomainClass &apos;Solution_name&apos;</comment>
   </data>
+  <data name="Company.Assignment_test.Concern.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.Concern</value>
+    <comment>Description for DomainClass &apos;Concern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Concern.DisplayName" xml:space="preserve">
+    <value>Concern</value>
+    <comment>DisplayName for DomainClass &apos;Concern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Concern/Name.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.Concern.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;Concern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Concern/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;Concern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.SocialConcern.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.SocialConcern</value>
+    <comment>Description for DomainClass &apos;SocialConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.SocialConcern.DisplayName" xml:space="preserve">
+    <value>Social Concern</value>
+    <comment>DisplayName for DomainClass &apos;SocialConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.TechnicalConcern.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.TechnicalConcern</value>
+    <comment>Description for DomainClass &apos;TechnicalConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.TechnicalConcern.DisplayName" xml:space="preserve">
+    <value>Technical Concern</value>
+    <comment>DisplayName for DomainClass &apos;TechnicalConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.EnvironmentalConcern.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.EnvironmentalConcern</value>
+    <comment>Description for DomainClass &apos;EnvironmentalConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.EnvironmentalConcern.DisplayName" xml:space="preserve">
+    <value>Environmental Concern</value>
+    <comment>DisplayName for DomainClass &apos;EnvironmentalConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.EconomicConcern.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.EconomicConcern</value>
+    <comment>Description for DomainClass &apos;EconomicConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.EconomicConcern.DisplayName" xml:space="preserve">
+    <value>Economic Concern</value>
+    <comment>DisplayName for DomainClass &apos;EconomicConcern&apos;</comment>
+  </data>
   <data name="Company.Assignment_test.SoSAHasElements.Description" xml:space="preserve">
     <value>Embedding relationship between the Model and Elements</value>
     <comment>Description for DomainClass &apos;SoSAHasElements&apos;</comment>
@@ -333,6 +381,134 @@
     <value>Immediate_impact_level</value>
     <comment>PropertyDisplayName for DomainRole &apos;Solution_name&apos; on DomainRelationship &apos;Immediate_impact_levelHasSolution_name&apos;</comment>
   </data>
+  <data name="Company.Assignment_test.ConcernReferencesTargetConcern.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.ConcernReferencesTargetConcern</value>
+    <comment>Description for DomainClass &apos;ConcernReferencesTargetConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.ConcernReferencesTargetConcern.DisplayName" xml:space="preserve">
+    <value>Concern References Target Concern</value>
+    <comment>DisplayName for DomainClass &apos;ConcernReferencesTargetConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.ConcernReferencesTargetConcern/SourceConcern.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.ConcernReferencesTargetConcern.SourceConcern</value>
+    <comment>Description for DomainRole &apos;SourceConcern&apos; on DomainRelationship &apos;ConcernReferencesTargetConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.ConcernReferencesTargetConcern/SourceConcern.DisplayName" xml:space="preserve">
+    <value>Source Concern</value>
+    <comment>DisplayName for DomainRole &apos;SourceConcern&apos; on DomainRelationship &apos;ConcernReferencesTargetConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.ConcernReferencesTargetConcern/SourceConcern.PropertyDisplayName" xml:space="preserve">
+    <value>Target Concern</value>
+    <comment>PropertyDisplayName for DomainRole &apos;SourceConcern&apos; on DomainRelationship &apos;ConcernReferencesTargetConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.ConcernReferencesTargetConcern/TargetConcern.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.ConcernReferencesTargetConcern.TargetConcern</value>
+    <comment>Description for DomainRole &apos;TargetConcern&apos; on DomainRelationship &apos;ConcernReferencesTargetConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.ConcernReferencesTargetConcern/TargetConcern.DisplayName" xml:space="preserve">
+    <value>Target Concern</value>
+    <comment>DisplayName for DomainRole &apos;TargetConcern&apos; on DomainRelationship &apos;ConcernReferencesTargetConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.ConcernReferencesTargetConcern/TargetConcern.PropertyDisplayName" xml:space="preserve">
+    <value>Source Concern</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TargetConcern&apos; on DomainRelationship &apos;ConcernReferencesTargetConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Systematic_impact_levelHasConcern.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.Systematic_impact_levelHasConcern</value>
+    <comment>Description for DomainClass &apos;Systematic_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Systematic_impact_levelHasConcern.DisplayName" xml:space="preserve">
+    <value>Systematic_impact_level Has Concern</value>
+    <comment>DisplayName for DomainClass &apos;Systematic_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Systematic_impact_levelHasConcern/Systematic_impact_level.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.Systematic_impact_levelHasConcern.Systematic_impact_level</value>
+    <comment>Description for DomainRole &apos;Systematic_impact_level&apos; on DomainRelationship &apos;Systematic_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Systematic_impact_levelHasConcern/Systematic_impact_level.DisplayName" xml:space="preserve">
+    <value>Systematic_impact_level</value>
+    <comment>DisplayName for DomainRole &apos;Systematic_impact_level&apos; on DomainRelationship &apos;Systematic_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Systematic_impact_levelHasConcern/Systematic_impact_level.PropertyDisplayName" xml:space="preserve">
+    <value>Concern</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Systematic_impact_level&apos; on DomainRelationship &apos;Systematic_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Systematic_impact_levelHasConcern/Concern.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.Systematic_impact_levelHasConcern.Concern</value>
+    <comment>Description for DomainRole &apos;Concern&apos; on DomainRelationship &apos;Systematic_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Systematic_impact_levelHasConcern/Concern.DisplayName" xml:space="preserve">
+    <value>Concern</value>
+    <comment>DisplayName for DomainRole &apos;Concern&apos; on DomainRelationship &apos;Systematic_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Systematic_impact_levelHasConcern/Concern.PropertyDisplayName" xml:space="preserve">
+    <value>Systematic_impact_level</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Concern&apos; on DomainRelationship &apos;Systematic_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Enabling_impact_levelHasConcern.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.Enabling_impact_levelHasConcern</value>
+    <comment>Description for DomainClass &apos;Enabling_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Enabling_impact_levelHasConcern.DisplayName" xml:space="preserve">
+    <value>Enabling_impact_level Has Concern</value>
+    <comment>DisplayName for DomainClass &apos;Enabling_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Enabling_impact_levelHasConcern/Enabling_impact_level.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.Enabling_impact_levelHasConcern.Enabling_impact_level</value>
+    <comment>Description for DomainRole &apos;Enabling_impact_level&apos; on DomainRelationship &apos;Enabling_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Enabling_impact_levelHasConcern/Enabling_impact_level.DisplayName" xml:space="preserve">
+    <value>Enabling_impact_level</value>
+    <comment>DisplayName for DomainRole &apos;Enabling_impact_level&apos; on DomainRelationship &apos;Enabling_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Enabling_impact_levelHasConcern/Enabling_impact_level.PropertyDisplayName" xml:space="preserve">
+    <value>Concern</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Enabling_impact_level&apos; on DomainRelationship &apos;Enabling_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Enabling_impact_levelHasConcern/Concern.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.Enabling_impact_levelHasConcern.Concern</value>
+    <comment>Description for DomainRole &apos;Concern&apos; on DomainRelationship &apos;Enabling_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Enabling_impact_levelHasConcern/Concern.DisplayName" xml:space="preserve">
+    <value>Concern</value>
+    <comment>DisplayName for DomainRole &apos;Concern&apos; on DomainRelationship &apos;Enabling_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Enabling_impact_levelHasConcern/Concern.PropertyDisplayName" xml:space="preserve">
+    <value>Enabling_impact_level</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Concern&apos; on DomainRelationship &apos;Enabling_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Immediate_impact_levelHasConcern.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.Immediate_impact_levelHasConcern</value>
+    <comment>Description for DomainClass &apos;Immediate_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Immediate_impact_levelHasConcern.DisplayName" xml:space="preserve">
+    <value>Immediate_impact_level Has Concern</value>
+    <comment>DisplayName for DomainClass &apos;Immediate_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Immediate_impact_levelHasConcern/Immediate_impact_level.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.Immediate_impact_levelHasConcern.Immediate_impact_level</value>
+    <comment>Description for DomainRole &apos;Immediate_impact_level&apos; on DomainRelationship &apos;Immediate_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Immediate_impact_levelHasConcern/Immediate_impact_level.DisplayName" xml:space="preserve">
+    <value>Immediate_impact_level</value>
+    <comment>DisplayName for DomainRole &apos;Immediate_impact_level&apos; on DomainRelationship &apos;Immediate_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Immediate_impact_levelHasConcern/Immediate_impact_level.PropertyDisplayName" xml:space="preserve">
+    <value>Concern</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Immediate_impact_level&apos; on DomainRelationship &apos;Immediate_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Immediate_impact_levelHasConcern/Concern.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.Immediate_impact_levelHasConcern.Concern</value>
+    <comment>Description for DomainRole &apos;Concern&apos; on DomainRelationship &apos;Immediate_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Immediate_impact_levelHasConcern/Concern.DisplayName" xml:space="preserve">
+    <value>Concern</value>
+    <comment>DisplayName for DomainRole &apos;Concern&apos; on DomainRelationship &apos;Immediate_impact_levelHasConcern&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.Immediate_impact_levelHasConcern/Concern.PropertyDisplayName" xml:space="preserve">
+    <value>Immediate_impact_level</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Concern&apos; on DomainRelationship &apos;Immediate_impact_levelHasConcern&apos;</comment>
+  </data>
   <data name="Company.Assignment_test.Systematic_shape.Description" xml:space="preserve">
     <value>Shape used to represent ExampleElements on a Diagram.</value>
     <comment>Description for DomainClass &apos;Systematic_shape&apos;</comment>
@@ -353,6 +529,10 @@
     <value>Enabling_shape</value>
     <comment>DisplayName for DomainClass &apos;Enabling_shape&apos;</comment>
   </data>
+  <data name="Enabling_shapeNameDecoratorDefaultText" xml:space="preserve">
+    <value>NameDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
   <data name="Company.Assignment_test.Immediate_shape.Description" xml:space="preserve">
     <value>Description for Company.Assignment_test.Immediate_shape</value>
     <comment>Description for DomainClass &apos;Immediate_shape&apos;</comment>
@@ -361,6 +541,10 @@
     <value>Immediate_shape</value>
     <comment>DisplayName for DomainClass &apos;Immediate_shape&apos;</comment>
   </data>
+  <data name="Immediate_shapeNameDecoratorDefaultText" xml:space="preserve">
+    <value>NameDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
   <data name="Company.Assignment_test.Solution_name_shape.Description" xml:space="preserve">
     <value>Description for Company.Assignment_test.Solution_name_shape</value>
     <comment>Description for DomainClass &apos;Solution_name_shape&apos;</comment>
@@ -368,6 +552,62 @@
   <data name="Company.Assignment_test.Solution_name_shape.DisplayName" xml:space="preserve">
     <value>Solution_name_shape</value>
     <comment>DisplayName for DomainClass &apos;Solution_name_shape&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.ConcernShape.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.ConcernShape</value>
+    <comment>Description for DomainClass &apos;ConcernShape&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.ConcernShape.DisplayName" xml:space="preserve">
+    <value>Concern Shape</value>
+    <comment>DisplayName for DomainClass &apos;ConcernShape&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.SocialConcernShape.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.SocialConcernShape</value>
+    <comment>Description for DomainClass &apos;SocialConcernShape&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.SocialConcernShape.DisplayName" xml:space="preserve">
+    <value>Social Concern Shape</value>
+    <comment>DisplayName for DomainClass &apos;SocialConcernShape&apos;</comment>
+  </data>
+  <data name="SocialConcernShapeNameDecoratorDefaultText" xml:space="preserve">
+    <value>NameDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Company.Assignment_test.TechnicalConcernShape.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.TechnicalConcernShape</value>
+    <comment>Description for DomainClass &apos;TechnicalConcernShape&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.TechnicalConcernShape.DisplayName" xml:space="preserve">
+    <value>Technical Concern Shape</value>
+    <comment>DisplayName for DomainClass &apos;TechnicalConcernShape&apos;</comment>
+  </data>
+  <data name="TechnicalConcernShapeNameDecoratorDefaultText" xml:space="preserve">
+    <value>NameDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Company.Assignment_test.EnvironmentalConcernShape.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.EnvironmentalConcernShape</value>
+    <comment>Description for DomainClass &apos;EnvironmentalConcernShape&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.EnvironmentalConcernShape.DisplayName" xml:space="preserve">
+    <value>Environmental Concern Shape</value>
+    <comment>DisplayName for DomainClass &apos;EnvironmentalConcernShape&apos;</comment>
+  </data>
+  <data name="EnvironmentalConcernShapeNameDecoratorDefaultText" xml:space="preserve">
+    <value>NameDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Company.Assignment_test.EconomicConcernShape.Description" xml:space="preserve">
+    <value>Description for Company.Assignment_test.EconomicConcernShape</value>
+    <comment>Description for DomainClass &apos;EconomicConcernShape&apos;</comment>
+  </data>
+  <data name="Company.Assignment_test.EconomicConcernShape.DisplayName" xml:space="preserve">
+    <value>Economic Concern Shape</value>
+    <comment>DisplayName for DomainClass &apos;EconomicConcernShape&apos;</comment>
+  </data>
+  <data name="EconomicConcernShapeNameDecoratorDefaultText" xml:space="preserve">
+    <value>NameDecorator</value>
+    <comment>Text decorator default text</comment>
   </data>
   <data name="Company.Assignment_test.ExampleConnector.Description" xml:space="preserve">
     <value>Connector between the ExampleShapes. Represents ExampleRelationships on the Diagram.</value>
@@ -435,6 +675,46 @@
   </data>
   <data name="Solution_nameToolboxTooltip" xml:space="preserve">
     <value>Solution_name</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="Concern_shapeToolboxItem" xml:space="preserve">
+    <value>Concern_shape</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="Concern_shapeToolboxTooltip" xml:space="preserve">
+    <value>Concern_shape</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="SocialConcern_shapeToolboxItem" xml:space="preserve">
+    <value>SocialConcern_shape</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="SocialConcern_shapeToolboxTooltip" xml:space="preserve">
+    <value>Social Concern_shape</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="TechnicalConcern_shapeToolboxItem" xml:space="preserve">
+    <value>TechnicalConcern_shape</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="TechnicalConcern_shapeToolboxTooltip" xml:space="preserve">
+    <value>Technical Concern_shape</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EnvironmentalConcern_shapeToolboxItem" xml:space="preserve">
+    <value>EnvironmentalConcern_shape</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EnvironmentalConcern_shapeToolboxTooltip" xml:space="preserve">
+    <value>Environmental Concern_shape</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EconomicConcern_shapeToolboxItem" xml:space="preserve">
+    <value>EconomicConcern_shape</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EconomicConcern_shapeToolboxTooltip" xml:space="preserve">
+    <value>Economic Concern_shape</value>
     <comment>Toolbox tooltip text</comment>
   </data>
   <data name="UnresolvedToolboxItem" xml:space="preserve">
@@ -579,6 +859,26 @@ A DomainClass can be serialized as a moniker only if
     <comment>Toolbox item image</comment>
   </data>
   <data name="Solution_nameToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="Concern_shapeToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="SocialConcern_shapeToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="TechnicalConcern_shapeToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EnvironmentalConcern_shapeToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EconomicConcern_shapeToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
     <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
   </data>

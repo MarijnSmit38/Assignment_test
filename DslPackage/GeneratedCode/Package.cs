@@ -69,6 +69,46 @@ namespace Company.Assignment_test
 					"@Solution_nameToolboxBitmap;Company.Assignment_test.Dsl.dll", 
 					0xff00ff,
 					Index = 4)]
+	[VSShell::ProvideStaticToolboxItem("Company.Assignment_test.Assignment_testToolboxTab",
+					"@Concern_shapeToolboxItem;Company.Assignment_test.Dsl.dll", 
+					"Company.Assignment_test.Concern_shapeToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"Concern_shape", 
+					"@Concern_shapeToolboxBitmap;Company.Assignment_test.Dsl.dll", 
+					0xff00ff,
+					Index = 5)]
+	[VSShell::ProvideStaticToolboxItem("Company.Assignment_test.Assignment_testToolboxTab",
+					"@SocialConcern_shapeToolboxItem;Company.Assignment_test.Dsl.dll", 
+					"Company.Assignment_test.SocialConcern_shapeToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"SocialConcern_shape", 
+					"@SocialConcern_shapeToolboxBitmap;Company.Assignment_test.Dsl.dll", 
+					0xff00ff,
+					Index = 6)]
+	[VSShell::ProvideStaticToolboxItem("Company.Assignment_test.Assignment_testToolboxTab",
+					"@TechnicalConcern_shapeToolboxItem;Company.Assignment_test.Dsl.dll", 
+					"Company.Assignment_test.TechnicalConcern_shapeToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"TechnicalConcern_shape", 
+					"@TechnicalConcern_shapeToolboxBitmap;Company.Assignment_test.Dsl.dll", 
+					0xff00ff,
+					Index = 7)]
+	[VSShell::ProvideStaticToolboxItem("Company.Assignment_test.Assignment_testToolboxTab",
+					"@EnvironmentalConcern_shapeToolboxItem;Company.Assignment_test.Dsl.dll", 
+					"Company.Assignment_test.EnvironmentalConcern_shapeToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"EnvironmentalConcern_shape", 
+					"@EnvironmentalConcern_shapeToolboxBitmap;Company.Assignment_test.Dsl.dll", 
+					0xff00ff,
+					Index = 8)]
+	[VSShell::ProvideStaticToolboxItem("Company.Assignment_test.Assignment_testToolboxTab",
+					"@EconomicConcern_shapeToolboxItem;Company.Assignment_test.Dsl.dll", 
+					"Company.Assignment_test.EconomicConcern_shapeToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"EconomicConcern_shape", 
+					"@EconomicConcern_shapeToolboxBitmap;Company.Assignment_test.Dsl.dll", 
+					0xff00ff,
+					Index = 9)]
 	[VSShell::ProvideEditorFactory(typeof(Assignment_testEditorFactory), 103, TrustLevel = VSShellInterop::__VSEDITORTRUSTLEVEL.ETL_AlwaysTrusted)]
 	[VSShell::ProvideEditorExtension(typeof(Assignment_testEditorFactory), "." + Constants.DesignerFileExtension, 50)]
 	[VSShell::ProvideEditorLogicalView(typeof(Assignment_testEditorFactory), "{7651A702-06E5-11D1-8EBD-00A0C90F26EA}")] // Designer logical view GUID i.e. VSConstants.LOGVIEWID_Designer
